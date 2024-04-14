@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Communicate</title>
+</head>
+<body>
+    <h1>Communicate</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your message here"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

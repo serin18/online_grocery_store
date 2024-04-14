@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Availability</title>
+</head>
+<body>
+    <h1>Update Availability</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="availability">Availability:</label>
+        <select name="availability" id="availability">
+            <option value="1">Available</option>
+            <option value="0">Not available</option>
+        </select>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>

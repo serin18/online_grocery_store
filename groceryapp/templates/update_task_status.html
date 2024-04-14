@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Task Status</title>
+</head>
+<body>
+    <h1>Update Task Status</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="status">Status:</label>
+        <select name="status" id="status">
+            <option value="1">Pending</option>
+            <option value="2">Dispatch</option>
+            <option value="3">On the way</option>
+            <option value="4">Delivered</option>
+            <option value="5">Cancel</option>
+            <option value="6">Return</option>
+        </select>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>

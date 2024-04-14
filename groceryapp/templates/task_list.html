@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery Task List</title>
+</head>
+<body>
+    <h1>Delivery Task List</h1>
+    <ul>
+    {% for delivery_task in delivery_tasks %}
+        <li>{{ delivery_task }}</li>
+    {% empty %}
+        <li>No tasks assigned</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

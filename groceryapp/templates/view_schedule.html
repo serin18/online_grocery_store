@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Schedule</title>
+</head>
+<body>
+    <h1>View Schedule</h1>
+    <ul>
+    {% for schedule in delivery_schedule %}
+        <li>{{ schedule }}</li>
+    {% empty %}
+        <li>No schedule available</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
